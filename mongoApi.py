@@ -66,7 +66,7 @@ def main(filterID, facilityID):
             for item in data:
                 folderName = item["noteinfo"]["folder_name"]
                 filename = item['noteorfilename']
-                filepath = f"{os.environ.get('FILEPATH_URL')}{facilityID}/sanityscripts/{folderName}/{filename}"
+                filepath = f"{os.environ.get('FILEPATH_URL')}/{facilityID}/sanityscripts/{folderName}/{filename}"
 
                 transformed_item = {
                     "_id": item["_id"],
